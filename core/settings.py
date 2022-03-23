@@ -82,7 +82,8 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DEVLOPMENT_PHASE = config('DEVLOPMENT_PHASE', default="False")
+
+DEVLOPMENT_PHASE = config('DEVLOPMENT_PHASE', default="False") #This environment variable directs the database configuration to sqlite3 in case it is in the development phase.
 
 if DEVLOPMENT_PHASE == 'True':
     DATABASES = {
