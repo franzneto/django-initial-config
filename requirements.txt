@@ -1,0 +1,4 @@
+#Base
+django==3.2.12
+psycopg2-binary==2.9.3
+python-decouple==3.6
