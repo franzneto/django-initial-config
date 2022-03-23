@@ -12,5 +12,4 @@ class UserAdmin(auth_admin.UserAdmin):
     form = UserChangeForm
     add_form = UserCreationForm
     model = User
-    fieldsets = auth_admin.UserAdmin.fieldsets + ( ("Personalized fields", {"fields": ("bio",)}), 
-    )
+    #fieldsets = auth_admin.UserAdmin.fieldsets + ( ("Personalized fields", {"fields": ("bio",)}),)
